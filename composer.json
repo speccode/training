@@ -1,0 +1,14 @@
+{
+    "name": "maciejczerpinski/legacy",
+    "type": "project",
+    "require": {
+        "php": "^8.3"
+    },
+        "phpunit/phpunit": "^11.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Legacy\\": "src/"
+        }
+    }
+}

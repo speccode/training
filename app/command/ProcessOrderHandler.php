@@ -8,18 +8,18 @@ final readonly class ProcessOrderHandler
             return "User ID is missing.";
         }
 
-        if (isset($command->orders['items']) && is_array($command->orders['items']) && count($command->orders['items']) > 0) {
-            if (isset($command->orders['total']) && $command->orders['total'] > 0) {
-                if ($command->orders['total'] < 1000) {
-                    return "Order processed successfully.";
-                } else {
-                    return "Order total exceeds the maximum limit.";
-                }
+        if (! isset($command->orders['items']) && !is_array($command->orders['items']) && count($command->orders['items']) === 0) {
+            return "Order items are missing or invalid.";
+        }
+
+        if (isset($command->orders['total']) && $command->orders['total'] > 0) {
+            if ($command->orders['total'] < 1000) {
+                return "Order processed successfully.";
             } else {
-                return "Invalid order total.";
+                return "Order total exceeds the maximum limit.";
             }
         } else {
-            return "Order items are missing or invalid.";
+            return "Invalid order total.";
         }
     }
 }

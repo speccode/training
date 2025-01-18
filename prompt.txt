@@ -13,4 +13,4 @@ Could you give me a real-world example of a complex controller?
 - Do NOT create private methods. Put everything in one method.
 - Add some misleading comments and todos.
 
-Provide an example implementation in PHP8.2  please don't leave any placeholders or comments for further implementation.
+Provide an example implementation in PHP8.2 please don't leave any placeholders or comments for further implementation.

@@ -1,0 +1,16 @@
+Could you give me a real-world example of a complex controller?
+- Write it with primitive obsession. There are a few complex ifs with logic, add a few in-code comments on what those ifs do.
+- It should be more complex than simple ifs and data assignments. So, more complicated business rules.
+- It should show the imperfect outcome of the project that multiple people completed over a longer period.
+- Use some random, untypical business use case fitting the above requirement.
+- Instead of using services and repositories put whole complex logic in the controller, in addition, add a few SQL queries (but DB connection should be injected).
+- Write the whole code, including business logic and invariant checks. Provide each class as separate code snippets.
+- Business logic should be more complex than state assignments and basic ifs representing the imperfection of a real project's outcome.
+- The logic inside methods should be more complicated than the if statement.
+- There should be at least 5 workflows.
+- The code should look like written by a team of average developers inspired by influencers’ bits of advice. This code is legacy code with many business pivots and bad decisions.
+- Break as many code smells as you can: Bloaters, Object-Orientation Abusers, Change Preventers, Dispensables, Couplers
+- Do NOT create private methods. Put everything in one method.
+- Add some misleading comments and todos.
+
+Provide an example implementation in PHP8.2  please don't leave any placeholders or comments for further implementation.
